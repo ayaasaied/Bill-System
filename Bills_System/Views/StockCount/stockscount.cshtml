@@ -1,0 +1,94 @@
+﻿
+@model Item
+
+@{
+    SelectList typeList =new SelectList(ViewBag.types,"Id","Name");
+    List<Item> items = ViewBag.items;
+
+}
+
+
+<div class="main-panel">
+            <div class="main-content">
+                <div class="content-wrapper">
+                    <div class="container-fluid">
+
+                        <section id="horizontal-form-layouts">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="card-title-wrap bar-success">
+                                                <h4 class="card-title" id="horz-layout-basic">Stock Count</h4>
+                                            </div>
+                                            <p class="mb-0">This is the basic horizontal form with labels on left and
+                                                cost
+                                                estimation form is the default position.</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="px-3">
+                                                <form asp-action="stockscount" asp-controller="StockCount" class="form form-horizontal">
+                                                    <div class="form-group row">
+                                                        <label asp-for="Id" class="col-md-3 label-control">type Name:
+                                                        </label>
+                                                        <div class="col-md-9">
+                                                            <select asp-for="Id" asp-items="typeList" name="typeId" class="form-control">
+                                                                
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-actions center">
+                                                        <button type="submit" class="btn btn-info">
+                                                            <i class="icon-magnifier"></i> Search
+                                                        </button>
+                                                    </div>
+                                                    
+                                                </form>
+                                                <table class="table">
+                                              <thead class="thead-light">
+                                                <tr>
+                                                  <th scope="col">Items Name</th>
+                                                  <th scope="col">Curnt Quantity</th>
+                                                  
+                                                  
+
+                                                </tr>
+                                              </thead>
+                                              @if(items!=null)
+                                              {
+                                              <tbody>
+                                                  
+                                              @for(int i=0; i<items.Count; i++)
+                                                {
+                                                    <tr> 
+                                                        <td>@items[i].Name</td>
+                                                        <td>@items[i].Stock</td>
+                                                        
+                                                        
+                                                    </tr>
+                                                }
+                                            
+                                                  
+                                                  
+                                                
+                                              </tbody>
+                                              }
+                                          </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div></section>
+                    </div>
+                </div>
+            </div>
+            <!-- end Renderbody -->
+
+            <footer class="footer footer-static footer-light">
+                <p class="clearfix text-muted text-center px-2"><span>Copyright © 2022
+                        <a href="#" id="pixinventLink" target="_blank" class="text-bold-800 primary darken-2">Pioneer-solutions</a>, All rights reserved. </span>
+                </p>
+            </footer>
+        </div>

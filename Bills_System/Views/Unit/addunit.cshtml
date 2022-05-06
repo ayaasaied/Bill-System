@@ -1,0 +1,69 @@
+﻿@model Unit
+@{
+    Layout = "_Layout";
+}
+
+<div class="main-content">
+    <div class="content-wrapper">
+        <div class="container-fluid">
+           
+        <section id="horizontal-form-layouts">
+                   
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-wrap bar-success">
+                                <h4 class="card-title" id="horz-layout-basic">Units Form</h4>
+                            </div>
+                            @*  <p class="mb-0">This is the basic horizontal form with labels on left and cost estimation form is the default position.</p>*@
+                        </div>
+                        <div class="card-body">
+                            <div class="px-3">
+
+                                <form asp-action="saveaddunit"  asp-controller="Unit" class="form form-horizontal">
+                                            
+                                        <div class="form-group row">
+                                            <label  asp-for="Name" class="col-md-3 label-control">Unit Name : </label>
+                                            <div class="col-md-9">
+                                                <input asp-for="Name" class="form-control" />
+                                                <span asp-validation-for="Name" class="text-danger"></span>                                                        </div>
+                                        </div>
+                                 
+                                   
+                                        <div class="form-group row">
+                                            <label asp-for="Notes" class="col-md-3 label-control" >Notes: </label>
+                                            <div class="col-md-9">
+                                                <textarea asp-for="Notes" rows="5" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-actions">
+                                                <a asp-action="index" asp-controller="Home" class="btn btn-danger"> <i class="icon-trash"></i> Cancel</a>
+                                        @*<button asp-action="index" asp-controller="Home" type="button" class="btn btn-danger mr-1">
+                                            <i class="icon-trash"></i> Cancel
+                                        </button>*@
+                                        <button type="submit" class="btn btn-success">
+                                            <i class="icon-note"></i> Save
+                                        </button>
+                                    </div>
+                                    </form>
+
+                                    </div>
+                    
+                                            
+                            </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+    </div>
+          
+</div>
+           @section Scripts{
+<!--JQuery PAckage -->
+ 
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

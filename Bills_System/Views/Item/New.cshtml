@@ -1,0 +1,176 @@
+﻿@using Bills.Data
+@model Item
+
+
+<script>
+    function getTypeData(){
+        var id =$("#Comp_Id").val();
+        console.log(id);
+        $.ajax(
+            {
+                url: "/Item/TypeDetails",
+                data:{"com_id":id},
+                
+                success: function(result){
+                    console.log(result);
+                
+                    $("#type").html(result);
+                }
+            }
+         );
+    }
+</script>
+@{
+    
+    if (ViewBag.comps == null)
+    {
+        ViewBag.comps = new List<Company>()
+        {
+            new Company(){
+                    Id = 1,
+                    Name = "There is no data"
+                },
+                
+        };
+        
+    }
+    
+    if (ViewBag.units == null)
+    {
+        ViewBag.units = new List<Unit>()
+        {
+            new Unit(){
+                    Id = 1,
+                    Name = "There is no data"
+                },
+                
+        };
+    }
+    
+    //List<Company> comps = ViewBag.comps;//
+
+    SelectList compsList = new SelectList(ViewBag.comps,"Id","Name");
+    SelectList unitsList = new SelectList(ViewBag.units,"Id","Name");
+
+
+    //List<Bills.Models.Type> types = ViewBag.types;//
+}
+<script>
+    
+</script>
+
+<div class="main-content">
+    <div class="content-wrapper">
+        <div class="container-fluid">
+           
+        <section id="horizontal-form-layouts">
+                   
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-wrap bar-success">
+                                <h4 class="card-title" id="horz-layout-basic">Categories Form</h4>
+                            </div>
+                            <p class="mb-0">This is the basic horizontal form with labels on left and cost estimation form is the default position.</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="px-3">
+                                <form asp-controller="Item" asp-action="AddNew" method="post" class="form form-horizontal">
+                                    <div class="form-group row">
+                                        <label class="col-md-3 label-control">Company Name: </label>
+                                        <div class="col-md-9">
+                                            <select asp-for="Comp_Id" asp-items="compsList" class="form-control" onchange="getTypeData()">
+                                                <option id="com" value="0" selected="" disabled="">choose from Companies</option>                                                       
+                                            </select>
+                                            <span asp-validation-for="Comp_Id" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div id="type">
+                                        <div class="form-group row">
+                                            <label asp-for="Type_Id" class="col-md-3 label-control">Species Name: </label>
+                                            <div class="col-md-9">
+                                                <select asp-for="Type_Id"  class="form-control">
+                                                    <option value="0" id="com" selected="" disabled="">choose from Species</option>
+                                                </select>
+                                                <span asp-validation-for="Type_Id" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label asp-for="Unit_Id" class="col-md-3 label-control">Unit Name: </label>
+                                        <div class="col-md-9">
+                                            <select asp-for="Unit_Id" asp-items="unitsList" class="form-control">
+                                                <option value="0" selected="" disabled="">choose from Units</option>
+                                            </select>
+                                            <span asp-validation-for="Unit_Id" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                            <label asp-for=Name class="col-md-3 label-control">Item Name : </label>
+                                            <div class="col-md-9">
+                                                <input asp-for=Name type="text" class="form-control">
+                                                <span asp-validation-for="Name" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label asp-for="Stock" class="col-md-3 label-control">Beginning Quantity
+                                                : </label>
+                                            <div class="col-md-9">
+                                                <input asp-for="Stock" type="text" class="form-control">
+                                                <span asp-validation-for="Stock" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                   
+                                        <div class="form-group row">
+                                            <label asp-for="SellingPrice" class="col-md-3 label-control">selling price:
+                                                : </label>
+                                            <div class="col-md-9">
+                                                <input asp-for="SellingPrice" type="text" class="form-control">
+                                                <span asp-validation-for="SellingPrice" class="text-danger"></span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="form-group row">
+                                            <label asp-for="BuyingPrice" class="col-md-3 label-control">buying Price : </label>
+                                            <div class="col-md-9">
+                                                <input asp-for="BuyingPrice" type="text" class="form-control">
+                                                <span asp-validation-for="BuyingPrice" class="text-danger"></span>
+                                            </div>
+                                            
+                                        </div>
+                                                      
+                    
+                                        <div class="form-group row">
+                                            <label asp-for="Notes" class="col-md-3 label-control" >Notes: </label>
+                                            <div class="col-md-9">
+                                                <textarea asp-for="Notes" rows="5" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-actions">
+                                         <button type="button" class="btn btn-danger mr-1" onclick="location.href='@Url.Action("Index","Home")';">
+                                                        <i class="icon-trash"></i> Cancel
+                                                    </button>
+                                        <button type="submit" class="btn btn-success">
+                                            <i class="icon-note"></i> Save
+                                        </button>
+                                            
+                                    </div>
+                                 </form></div>
+                    
+                                    
+                                            
+                            </div>
+                                    
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+            </div>
+@section Scripts{
+<!--JQuery PAckage -->
+ 
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

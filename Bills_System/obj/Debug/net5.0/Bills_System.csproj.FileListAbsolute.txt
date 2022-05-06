@@ -1,0 +1,168 @@
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\appsettings.Development.json
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\appsettings.json
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.exe
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.deps.json
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.runtimeconfig.json
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.runtimeconfig.dev.json
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\ref\Bills_System.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.pdb
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.Views.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.Views.pdb
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Humanizer.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\Newtonsoft.Json.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\System.Runtime.Caching.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\graduation project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.csproj.AssemblyReference.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.GeneratedMSBuildEditorConfig.editorconfig
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.AssemblyInfoInputs.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.AssemblyInfo.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.csproj.CoreCompileInputs.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.MvcApplicationPartsAssemblyInfo.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.RazorAssemblyInfo.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.RazorAssemblyInfo.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\scopedcss\bundle\Bills_System.styles.css
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\staticwebassets\Bills_System.StaticWebAssets.Manifest.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.TagHelpers.input.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.TagHelpers.output.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.RazorCoreGenerate.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.RazorTargetAssemblyInfo.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.RazorTargetAssemblyInfo.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.Views.pdb
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.csproj.CopyComplete
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.dll
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\ref\Bills_System.dll
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.pdb
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.genruntimeconfig.cache
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Client\New.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Company\addcompany.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\itemstransaction\itemstrans.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Item\New.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Sales\NewBill.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Sales_Report\Index.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_ItemPrice.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_PartialGenerateClientNumber.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_PartialGenerateSalesNumber.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_TypeSelect.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\StockCount\stockscount.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Type\AddType.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Unit\addunit.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+G:\graduation project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\appsettings.json
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.exe
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.deps.json
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.runtimeconfig.json
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.runtimeconfig.dev.json
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\ref\Bills_System.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.pdb
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.Views.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Bills_System.Views.pdb
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Humanizer.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.AssemblyInfo.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.RazorAssemblyInfo.cache
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.RazorAssemblyInfo.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\scopedcss\bundle\Bills_System.styles.css
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\staticwebassets\Bills_System.StaticWebAssets.Manifest.cache
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.TagHelpers.input.cache
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.TagHelpers.output.cache
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.RazorCoreGenerate.cache
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Client\New.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Company\addcompany.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\itemstransaction\itemstrans.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Item\New.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Sales\NewBill.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Sales_Report\Index.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_ItemPrice.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_PartialGenerateClientNumber.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_PartialGenerateSalesNumber.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_TypeSelect.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\StockCount\stockscount.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Type\AddType.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\Unit\addunit.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.RazorTargetAssemblyInfo.cache
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.RazorTargetAssemblyInfo.cs
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.Views.pdb
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.csproj.CopyComplete
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\ref\Bills_System.dll
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.pdb
+C:\Users\DELL\Desktop\graduithion my team\final project\Bills_System\Bills_System\obj\Debug\net5.0\Bills_System.genruntimeconfig.cache

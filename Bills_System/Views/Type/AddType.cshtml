@@ -1,0 +1,73 @@
+﻿@model Bills.Models.Type
+
+@{
+    Layout = "_Layout";
+     SelectList CompList =new SelectList(ViewBag.comp,"Id","Name");
+}
+
+ <div class="main-content" >
+               <div class="content-wrapper">
+                  <div class="container-fluid">
+           
+                    <section id="horizontal-form-layouts" >
+                   
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title-wrap bar-success">
+                                            <h4 class="card-title" id="horz-layout-basic">Species Data Form</h4>
+                                     
+                                    <div class="card-body">
+                                        <div class="px-3">
+                                            <form asp-action="SaveType" asp-controller="Type" method="post" class="form form-horizontal">
+                                               
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" asp-for="Company.Name">Company Name: </label>
+                                                    <div class="col-md-9">
+                                                        <select asp-for="Campany_Id" asp-items="CompList" class="form-control">
+                                                        <option value="" hidden disabled selected>Choose From Companies</option>
+                                                        </select>
+                                                        <span asp-validation-for="Campany_Id" class="text-danger"></span>
+                                                    </div>
+                                                </div>
+
+                                               <div class="form-group row">
+                                                        <label class="col-md-3 label-control" asp-for="Name">Type Name : </label>
+                                                        <div class="col-md-9">
+                                                            <input asp-for="Name" class="form-control">
+                                                            <span asp-validation-for="Name" class="text-danger"></span>
+                                                        </div>
+                                                    </div>
+                    
+                                                    <div class="form-group row">
+                                                        <label class="col-md-3 label-control" asp-for="Notes">Notes: </label>
+                                                        <div class="col-md-9">
+                                                            <textarea asp-for="Notes" rows="5" class="form-control"></textarea>
+                                                              <span asp-validation-for="Notes" class="text-danger"></span>
+                                                        </div>
+                                                    </div>
+                                                     <div class="form-actions">
+                                                     <a asp-action="index" asp-controller="Home" class="btn btn-danger"> <i class="icon-trash"></i> Cancel</a>
+                                                   
+                                                    <button type="submit" class="btn btn-success" value="Save">
+                                                        <a class="icon-note"asp-action="AddType" ></a> Save
+                                                    </button>
+                                                </div>
+                                                </form></div>
+                                           </div>                              
+                                      </div>
+                                  </div>
+                              </section>
+                            </div>
+                          </div>
+                     </div>
+                 
+
+
+ @section Scripts{
+<!--JQuery PAckage -->
+ 
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

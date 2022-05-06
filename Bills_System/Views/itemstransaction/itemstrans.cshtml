@@ -1,0 +1,119 @@
+﻿@model Item
+@{
+    Layout = "_Layout";
+    SelectList itemsList =new SelectList(ViewBag.itms,"Id","Name");
+
+    Item item = ViewBag.tableItem;
+    List<SalesDetalis> sDetails = ViewBag.tablesDetails;
+    float q=0;
+    if(sDetails != null)
+    {
+        foreach(SalesDetalis s in sDetails)
+            {
+                q += s.quantity;
+            }
+    }
+    
+}
+
+<div class="main-panel">
+    <div class="main-content">
+        <div class="content-wrapper">
+            <div class="container-fluid">
+
+                <section id="horizontal-form-layouts">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title-wrap bar-success">
+                                        <h4 class="card-title" id="horz-layout-basic">Item Transaction</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="px-3">
+                                        <form asp-action="itemstrans" asp-controller="itemstransaction" class="form form-horizontal">
+                                            <div class="form-group row">
+                                                <label asp-for="Id" class="col-md-3 label-control">Item Name:
+                                                </label>
+                                                <div class="col-md-9">
+                                                    <select asp-for="Id" asp-items="itemsList" name="itemid" class="form-control">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-actions center">
+                                                <button type="submit" class="btn btn-info">
+                                                    <i class="icon-magnifier"></i> Search
+                                                </button>
+                                            </div>
+                                                    
+                                        </form>
+                                        <h2>inserted Item</h2>
+                                        <table class="table">
+                                              <thead class="thead-light">
+                                                <tr>
+                                                    <th>itemId</th>
+                                                    <th>item Name</th>
+                                                    <th>buying price</th>
+                                                    <th>inserting amount</th>
+                                                    <th>inserting date</th>
+                                                </tr>
+                                              </thead>
+                                              @if(item!=null)
+                                              {
+                                              <tbody>
+                                                  
+                                              @if (item != null)
+                                            {
+                                                <tbody>
+                                                    <tr>
+                                                        <td >@item.Id</td>
+                                                        <td>@item.Name</td>
+                                                        <td>@item.BuyingPrice</td>
+                                                        <td>@(item.Stock + q)</td>
+                                                        <td>@item.Created.ToString("yyyy-MM-dd")</td>
+                                                    </tr>
+                                            </tbody>
+                                            }
+                                              </tbody>
+                                              }
+                                          </table>
+                                        
+                                        <h2>selling Transactions</h2>
+                                        <table class="table">
+                                            <thead class="thead-light">
+                                                <tr>
+                                                    <th>itemId</th>
+                                                    <th>item Name</th>
+                                                    <th>quantity</th>
+                                                        <th>price</th>
+                                                    <th>bill date</th>
+                                                </tr>
+                                            </thead>
+                                            @if (sDetails != null)
+                                            {
+                                                <tbody>
+                                                @foreach(var i in sDetails)
+                                                {
+                                                        <tr>
+                                                                <td >@i.Item_Id</td>
+                                                            <td>@i.I.Name</td>
+                                                            <td>@i.quantity</td>
+                                                            <td>@i.Price</td>
+                                                            <td>@i.S.Date.ToString("yyyy-MM-dd")</td>
+                                                        </tr>
+                                                }   
+                                                </tbody>
+                                            }
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div></section>
+            </div>
+        </div>
+    </div>
+    <!-- end Renderbody -->
+</div>

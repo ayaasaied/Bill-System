@@ -1,0 +1,298 @@
+﻿
+
+
+@model Sales
+
+
+@{
+    SalesDetalis s = ViewBag.item;
+    SelectList clientsList = new SelectList(ViewBag.clients,"Id","Name");
+    SelectList itemsList = new SelectList(ViewBag.items,"Id","Name");
+    if (ViewBag.total == null)
+    {
+        ViewBag.total = 0;
+    }
+
+
+
+    List<SalesDetalis> objsComplex =ViewBag.TableItems;
+    List<Item> itemsforTable =ViewBag.MoreDetailsTableItem;
+    List<float> totals = ViewBag.allTotals;
+
+                
+}
+<script>
+    window.onload = function() {
+    getNumber()
+}
+    function getTotalItem(){
+        document.getElementById("totalItem").value= document.getElementById("Price").value * document.getElementById("quantity").value
+      
+    }
+    function getValueDis(){
+        document.getElementById("TvalueDiscount").value= (document.getElementById("TotalBill").value * document.getElementById("TpercentDiscount").value)/100
+        document.getElementById("net").value=document.getElementById("TotalBill").value - document.getElementById("TvalueDiscount").value
+    }
+    function getPercentageDis(){
+        document.getElementById("TpercentDiscount").value= (document.getElementById("TvalueDiscount").value / document.getElementById("TotalBill").value)*100
+        document.getElementById("net").value=document.getElementById("TotalBill").value - document.getElementById("TvalueDiscount").value
+    }
+    function getRest(){
+        document.getElementById("rest").value=document.getElementById("net").value - document.getElementById("paied").value
+
+    }
+    
+    function getPrice(){
+        var id =$("#Item_Id").val();
+        $.ajax(
+            {
+                url: "/Sales/ItemPriceDetails",
+                data:{"item_id":id},
+                
+                success: function(result){
+                
+                    $("#sellingPrice").html(result);
+                }
+            }
+         );
+    }
+    function getNumber(){
+        
+        $.ajax(
+            {
+                url: "/Sales/GenerateSalesNumber",
+                
+                
+                success: function(result){
+                    console.log(result);
+                
+                    $("#number").html(result);
+                }
+            }
+         );
+    }
+    
+</script>
+
+<div class="main-content">
+    <div class="content-wrapper">
+        <div class="container-fluid">
+        <section id="horizontal-form-layouts">
+            <div class="row">
+                         
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-wrap bar-success">
+                                <h4 class="card-title" id="horz-layout-basic">Sales Invoice</h4>
+                            </div>
+                            <p class="mb-0">This is the basic horizontal form with labels on left and cost estimation form is the default position.</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="px-3">
+                                
+                                <form class="form form-horizontal" asp-controller="Sales" asp-action="SaveItem">
+                                    <h4 class="form-section">
+                                            <i class="icon-user"></i>Item Details</h4>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 label-control" for="ItemName">Item Name : </label>
+                                            <div class="col-md-9">
+                                                <select id="Item_Id" name="Item_Id" for="Item_Id" asp-for=@s.Item_Id asp-items="itemsList"  class="form-control" onchange="getPrice()">
+                                                    <option  value="0" selected="" disabled="" >Choose From Species </option>                                                    
+                                                </select>
+                                                <span class="text-danger" asp-validation-for=@s.Item_Id></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row" id="sellingPrice">
+                                            <label class="col-md-3 label-control" for="Price" >selling price
+                                            : </label>
+                                            <div class="col-md-9">
+                                                <input type="text" name="Price" for="Price" class="form-control" id="Price">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row" >
+                                            <label class="col-md-3 label-control">Quintity: </label>
+                                            <div class="col-md-9">
+                                                <input onblur="getTotalItem()" name="quantity" for="quantity" asp-for=@s.quantity type="text" class="form-control" id="quantity">
+                                                <span class="text-danger" asp-validation-for=@s.quantity></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 label-control" for="totalItem">Total: </label>
+                                            <div class="col-md-9">
+                                                <input type="text" readonly id="totalItem" class="form-control" name="totalItem">
+                                            </div>
+                                        </div>
+                                        <div class="form-actions text-center">
+                                        
+                                        <button type="submit" class="btn btn-success px-5">
+                                            <i class="icon-note"></i> Add
+                                        </button>
+                                         </div>
+                                        </form>
+
+
+
+                                        <table class="table">
+                                              <thead class="thead-light">
+                                                <tr>
+                                                  <th scope="col">Item Code</th>
+                                                  <th scope="col">Item Name</th>
+                                                  <th scope="col">Unit</th>
+                                                  <th scope="col">Quantity</th>
+                                                  <th scope="col">Selling Price</th>
+                                                  <th scope="col">Total</th>
+
+                                                </tr>
+                                              </thead>
+                                              @if(objsComplex!=null)
+                                              {
+                                              <tbody>
+                                                  
+                                              @for(int i=0; i<objsComplex.Count; i++)
+                                                {
+                                                    <tr> 
+                                                        <td>@objsComplex[i].Item_Id</td>
+                                                        <td>@itemsforTable[i].Name</td>
+                                                        <td>@itemsforTable[i].Unit.Name</td>
+                                                        <td>@objsComplex[i].quantity</td>
+                                                        <td>@objsComplex[i].Price</td>
+                                                        <td>@totals[i]</td>
+                                                    </tr>
+                                                }
+                                            
+                                                  
+                                                  
+                                                
+                                              </tbody>
+                                              }
+                                          </table>
+
+
+
+
+
+                                <form class="form form-horizontal" asp-controller="Sales" asp-action="saveBill">
+                                    <div class="form-body">
+                                        <h4 class="form-section">
+                                            <i class="icon-user"></i>Bills Details</h4>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 label-control" asp-for=Date>Bills Date : </label>
+                                            <div class="col-md-9 input-group" >
+                                                <input type="text" value="@Model.Date.ToString("yyyy-MM-dd")" asp-for="Date" id="Date" class="datepicker form-control inline">
+                                                <label class="input-group-addon btn" for="Date">
+                                                    <span class="fa fa-calendar"></span>
+                                                </label>
+
+                                                <span asp-validation-for="Date" class="text-danger"></span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="form-group row" id="number">
+                                            <label class="col-md-3 label-control" asp-for=BillsNumber>Bills NUmber: </label>
+                                            <div class="col-md-9">
+                                                <input type="text"   readonly asp-for=BillsNumber class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 label-control">Client Name : </label>
+                                            <div class="col-md-9">
+                                                <select asp-for=Client_Id asp-items="clientsList" class="form-control" >
+                                                    <option value="0" selected="" disabled="">Choose From Clients </option>                           
+                                                </select>
+                                                <span asp-validation-for="Client_Id" class="text-danger"></span>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        
+                                        <h4 class="form-section">
+                                            <i class="icon-book-open"></i>Other Details</h4>
+                                    
+                                     
+                                        <div class="form-group row">
+                                            <label class="col-md-3 label-control" asp-for=TotalBill> Bills Total  </label>
+                                            <div class="col-md-9">
+                                                <input type="text" readonly name="TotalBill" value=@ViewBag.total asp-for=TotalBill class="form-control">
+                                                <span asp-validation-for="TotalBill" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 label-control" asp-for=TpercentDiscount> percentage discount
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input type="text" onblur="getValueDis()" asp-for=TpercentDiscount class="form-control">
+                                                <span asp-validation-for="TpercentDiscount" class="text-danger"></span>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 label-control" asp-for=TvalueDiscount> value discount
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input type="text" onblur="getPercentageDis()"  asp-for=TvalueDiscount class="form-control">
+                                                <span asp-validation-for="TvalueDiscount" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 label-control" for="net"> The Net </label>
+                                            <div class="col-md-9">
+                                                <input type="text" readonly id="net" class="form-control" name="Type">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 label-control" asp-for=paied> paid up
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input type="text" asp-for=paied onblur="getRest()" class="form-control">
+                                                <span asp-validation-for="paied" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 label-control" for="rest"> The rest
+                                            </label>
+                                            <div class="col-md-9">
+                                                <input type="text" readonly id="rest" class="form-control" name="Type">
+                                            </div>
+                                        </div>
+                             
+                    
+                                    </div>
+                    
+                                    <div class="form-actions">
+                                        <button type="button" class="btn btn-danger mr-1" onclick="location.href='@Url.Action("Index","Home")';">
+                                                        <i class="icon-trash"></i> Cancel
+                                                    </button>
+                                        <button type="submit" class="btn btn-success">
+                                            <i class="icon-note"></i> Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+                    
+        </section>
+                  
+        </div>
+    </div>
+</div>
+@section Scripts{
+<!--JQuery PAckage -->
+    <script>
+         $(function () {
+        $('.datepicker').datepicker(
+        {
+            dateFormat: 'yy-mm-dd'
+        });
+    });
+    </script>
+
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

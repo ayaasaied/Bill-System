@@ -1,0 +1,26 @@
+﻿@model Item
+@{
+if (ViewBag.types == null)
+    {
+        ViewBag.types = new List<Bills.Models.Type>()
+        {
+            new Bills.Models.Type(){
+                    Id = 1,
+                    Name = "There is no data"
+                },
+                
+        };
+    }
+            SelectList typesList = new SelectList(ViewBag.types,"Id","Name");
+}
+
+
+<div class="form-group row">
+    <label asp-for="Type_Id" class="col-md-3 label-control">Species Name: </label>
+    <div class="col-md-9">
+        <select asp-for="Type_Id" asp-items="typesList" class="form-control">
+            <option value="0" id="com" selected="" disabled="">choose from Species</option>
+        </select>
+        <span asp-validation-for="Type_Id" class="text-danger"></span>
+    </div>
+</div>
